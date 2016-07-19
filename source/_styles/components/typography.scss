@@ -17,8 +17,8 @@ h2 {
   margin: 1.4em 0 0.6em 0;
   font-size: $font-size-h2 * 0.764705882;
   font-weight: 700;
-  color: $brand-primary;
   line-height: $line-height-base;
+  color: $brand-primary;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
@@ -38,7 +38,7 @@ h3 {
   letter-spacing: 0.05em;
 
   @media (min-width: $screen-sm-min) {
-    margin: 50px 0 13px 0;
+    margin: 50px 0 15px 0;
     font-size: $font-size-h3;
   }
 }
@@ -71,8 +71,8 @@ p {
   margin: 0 0 1.15em 0;
   font-size: $font-size--base;
   font-weight: 300;
-  color: $brand-primary;
   line-height: $line-height-big;
+  color: $brand-primary;
 
   @media (min-width: $screen-sm-min) {
     font-size: $font-size--base;
@@ -89,9 +89,19 @@ span {
   }
 }
 
+
+blockquote {
+  margin: 0;
+  padding: 25px 30px 26px 39px;
+  font-size: $font-size--large;
+  line-height: 1.55;
+  color: $brand-primary;
+  background-color: #fff;
+}
+
 a {
-  color: $link-color;
   font-weight: 300;
+  color: $link-color;
   text-decoration: none;
 
   &:hover,

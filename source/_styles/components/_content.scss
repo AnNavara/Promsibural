@@ -31,10 +31,10 @@
       font-size: $font-size--base;
     }
 
-    .hanged{
+    .hanged {
       position: absolute;
-      display: inline;
       right: 102%;
+      display: inline;
       font-size: 0.9em;
     }
   }
@@ -68,16 +68,7 @@
   }
 
   blockquote {
-    width: 808px;
-    max-width: 114.9%;
-    padding: 25px 30px 26px 39px;
-    margin-top: 34px;
-    margin-bottom: 44px;
-    margin-left: -14.4%;
-    font-size: $font-size--large;
-    line-height: 1.55;
-    color: $brand-primary;
-    background-color: #fff;
+    margin: 34px 0 44px -14.4%;
   }
 
   .table-wrapper {
