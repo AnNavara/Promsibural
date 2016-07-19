@@ -1,0 +1,135 @@
+h1 {
+  margin: 0 0 1.5em 0;
+  font-size: $font-size-h1;
+  font-weight: 700;
+  line-height: $line-height-base;
+  color: $brand-primary;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+
+  @media (min-width: $screen-sm-min) {
+    margin: 0 0 56px 0;
+  }
+}
+
+h2 {
+  margin: 1.4em 0 0.6em 0;
+  font-size: $font-size-h2 * 0.764705882;
+  font-weight: 700;
+  color: $brand-primary;
+  line-height: $line-height-base;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: $screen-sm-min) {
+    margin: 61px 0 10px 0;
+    font-size: $font-size-h2;
+  }
+}
+
+h3 {
+  margin: 1.3em 0 0.7em 0;
+  font-size: $font-size-h3 * 0.857142;
+  font-weight: 300;
+  line-height: $line-height-base;
+  color: $brand-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @media (min-width: $screen-sm-min) {
+    margin: 50px 0 13px 0;
+    font-size: $font-size-h3;
+  }
+}
+
+h4 {
+  margin: 0 0 1em 0;
+  font-size: $font-size-h4;
+  font-weight: normal;
+  line-height: $line-height-base;
+  letter-spacing: 0.08em;
+}
+
+h5 {
+  margin: 0 0 1em 0;
+  font-size: $font-size-h5;
+  font-weight: normal;
+  line-height: $line-height-base;
+  letter-spacing: 0.08em;
+}
+
+h6 {
+  margin: 0 0 1em 0;
+  font-size: $font-size-h6;
+  font-weight: normal;
+  line-height: $line-height-base;
+  letter-spacing: 0.08em;
+}
+
+p {
+  margin: 0 0 1.15em 0;
+  font-size: $font-size--base;
+  font-weight: 300;
+  color: $brand-primary;
+  line-height: $line-height-big;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size--base;
+  }
+}
+
+span {
+  font-size: $font-size--base;
+  font-weight: 300;
+  line-height: $line-height-big;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: $font-size--base;
+  }
+}
+
+a {
+  color: $link-color;
+  font-weight: 300;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color--hover;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: visible;
+  }
+
+  &:active {
+    color: $link-color--active;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.word-wrap {
+  hyphens: auto;
+  word-wrap: break-word;
+
+  @media (min-width: $screen-sm-min) {
+    word-wrap: normal;
+  }
+}

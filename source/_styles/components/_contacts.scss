@@ -1,0 +1,57 @@
+.contacts{
+
+  &__request-call,
+  &__email{
+    padding: 0;
+    font-size: $font-size--small;
+    color: $brand-accent;
+    background: transparent;
+    border: none;
+
+    &:hover{
+      color: $brand-color--darken;
+    }
+  }
+
+  &__icq,
+  &__skype{
+    position: relative;
+    display: block;
+    padding-left: 67px;
+    font-size: $font-size--small;
+    line-height: 1.5;
+    color: currentColor;
+
+    &:hover{
+      color: $brand-blue-light;
+    }
+  }
+
+  &__icq{
+    margin-top: 25px;
+
+    &::before{
+      position: absolute;
+      content: " ";
+      top: 2px;
+      left: 43px;
+      width: 14px;
+      height: 14px;
+      background: url("../img/icon-icq.png") no-repeat 0 0 transparent;
+    }
+  }
+
+  &__skype{
+    margin-top: 5px;
+
+    &::before{
+      position: absolute;
+      content: " ";
+      top: 2px;
+      left: 43px;
+      width: 15px;
+      height: 16px;
+      background: url("../img/icon-skype.png") no-repeat 0 0 transparent;
+    }
+  }
+}

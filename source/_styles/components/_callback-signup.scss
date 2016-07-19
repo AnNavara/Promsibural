@@ -1,0 +1,56 @@
+.callback {
+  font-weight: 300;
+
+  &__descr {
+    display: block;
+    font-size: $font-size--base;
+    font-weight: 300;
+  }
+
+  &__phone {
+    margin-top: -5px;
+    margin-bottom: 17px;
+    font-size: 24px;
+    line-height: $line-height-base;
+
+    a {
+      display: inline-block;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    padding: 38px 58px 57px 58px;
+    margin-top: 50px;
+    background: url("../img/bg-form.jpg") no-repeat right bottom $blue-blend;
+
+    &--no-mar {
+      margin-top: 0;
+    }
+
+    input:not([type="submit"]) {
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 24px;
+      color: $brand-color;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $brand-yellow;
+
+      &::placeholder {
+        color: $brand-color;
+      }
+    }
+
+    input[type="tel"] {
+      margin-bottom: 40px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      color: $brand-primary;
+    }
+  }
+}

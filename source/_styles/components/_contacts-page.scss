@@ -1,0 +1,75 @@
+.contacts-page {
+  padding-bottom: 215px;
+  margin-top: -25px;
+  font-weight: 300;
+  color: $brand-primary;
+  background-color: $brand-blend;
+
+  &__item {
+    position: relative;
+    margin-bottom: 40px;
+
+    &::after {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 77%;
+      height: 0;
+      content: "";
+      border-bottom: 1px solid $blue-blend--2;
+    }
+  }
+
+  &__wrapper {
+    padding-top: 55px;
+  }
+
+  &__descr {
+    display: block;
+    margin-bottom: 2px;
+    font-size: $font-size--small;
+    font-weight: 400;
+
+    &::before {
+      display: inline-block;
+      margin-right: 6px;
+      vertical-align: baseline;
+      content: " ";
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--phone::before {
+      width: 11px;
+      height: 11px;
+      background-image: url("../img/icon-phone.png");
+    }
+
+    &--mail::before {
+      width: 13px;
+      height: 10px;
+      background-image: url("../img/icon-mail.png");
+    }
+
+    &--icq::before {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+      background-image: url("../img/icon-icq.png");
+    }
+
+    &--skype::before {
+      width: 15px;
+      height: 15px;
+      vertical-align: middle;
+      background-image: url("../img/icon-skype.png");
+    }
+  }
+
+  &__meaningful {
+    font-size: $font-size-h4;
+    font-weight: 700;
+    line-height: 1.45;
+    color: currentColor;
+  }
+}

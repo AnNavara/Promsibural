@@ -1,0 +1,7 @@
+_design
+node_modules
+build
+tmp
+backup
+*.log
+todo.txt

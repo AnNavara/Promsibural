@@ -1,0 +1,16 @@
+.main-about {
+  padding: 98px 0 204px;
+  color: #fff;
+  background-color: $brand-sky--dark;
+
+  &__section {
+    margin-bottom: 51px;
+  }
+
+  p {
+    font-size: $font-size--base;
+    font-weight: 300;
+    color: #fff;
+    line-height: $line-height-big;
+  }
+}

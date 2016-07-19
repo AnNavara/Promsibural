@@ -1,0 +1,76 @@
+
+  <span class="tag">[table, caption, thead, th, tbody, td, tfoot]</span>
+  <p>The table element represents data with more than one dimension, in the form of a table. Tables must not be used as layout aids.</p>
+  <p>When a table element is the only content in a figure element other than the figcaption, the caption element should be omitted in favor of the figcaption.</p>
+  <p>The thead element represents the block of rows that consist of the column labels (headers) for the parent table element, if the thead element has a parent and it is a table.</p>
+  <p>The th element represents a header cell in a table.</p>
+  <p>The tbody element represents a block of rows that consist of a body of data for the parent table element, if the tbody element has a parent and it is a table.</p>
+  <p>The td element represents a data cell in a table.</p>
+  <p>The tfoot element represents the block of rows that consist of the column summaries (footers) for the parent table element, if the tfoot element has a parent and it is a table.</p>
+  <table border="1">
+    <caption>Characteristics with positive and negative sides</caption>
+    <thead>
+      <tr>
+        <th>Characteristic</th>
+        <th>Negative</th>
+        <th>Positive</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Mood</th>
+        <td>Sad</td>
+        <td>Happy</td>
+      </tr>
+      <tr>
+        <th>Grade</th>
+        <td>Failing</td>
+        <td>Passing</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>
+         This text is in the table border="1" footer.
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+
+
+  <span class="tag">[colgroup, col]</span>
+  <p>If the colgroup element contains no col elements, then the element may have a span content attribute specified, whose value must be a valid non-negative integer greater than zero.</p>
+  <p>If a col element has a parent and that is a colgroup element that itself has a parent that is a table element, then the col element represents one or more columns in the column group represented by that colgroup.</p>
+  <table border="1" rules="groups">
+    <colgroup span="2" style="color: red">
+    </colgroup>
+    <colgroup style="color: blue">
+    </colgroup>
+    <col span="2" style="color:red">
+    <col style="color:blue">
+    <tr>
+      <td>This column is in the first group.</td>
+      <td>This column is in the first group.</td>
+      <td>This column is in the second group.</td>
+    </tr>
+    <tr>
+      <td>This column is in the first group.</td>
+      <td>This column is in the first group.</td>
+      <td>This column is in the second group.</td>
+    </tr>
+  </table>
+
+
+
+
+  <span class="tag">[dl, dt, dd]</span>
+  <p>Name-value groups may be terms and definitions, metadata topics and values, or any other groups of name-value data. The values within a group are alternatives multiple paragraphs forming part of the same value must all be given within the same dd element.</p>
+  <p>The dt element represents the term, or name, part of a term-description group in a description list (dl element).</p>
+  <p>The dd element represents the description, definition, or value, part of a term-description group in a description list (dl element).</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>A popular hot drink.</dd>
+    <dt>Coca Cola</dt>
+    <dd>One of the leading brands of a popular cold fizzy drink.</dd>
+  </dl>

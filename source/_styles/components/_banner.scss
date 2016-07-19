@@ -1,0 +1,25 @@
+.banner {
+  height: 658px;
+  padding-top: 169px;
+  color: $brand-primary;
+  background: url("../img/bg-banner.jpg") no-repeat bottom center #fff;
+
+  span {
+    display: block;
+    width: 782px;
+    margin: 0 auto;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: currentColor;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 29px;
+  }
+}

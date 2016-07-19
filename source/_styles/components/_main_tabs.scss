@@ -1,0 +1,107 @@
+.tabs {
+  margin-top: -84px;
+  margin-bottom: 104px;
+
+  &__wrapper {
+    height: 481px;
+    padding: 63px 84px 63px 53px;
+    background-color: #fff;
+  }
+
+  &__menu {
+    float: left;
+    width: 201px;
+    margin-top: 5px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 11px 25px;
+      font-size: $font-size-h5;
+      color: $brand-primary;
+      font-weight: 300;
+      text-align: left;
+      background: transparent;
+      border: none;
+
+      &:hover {
+        background-color: $gray-96;
+      }
+    }
+  }
+
+  &__inner {
+    position: relative;
+    height: 355px;
+    padding-left: 137px;
+    overflow: hidden;  // hint to make it take whole available width
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 137px;
+    display: none;
+    width: calc(100% - 137px);
+    height: 100%;
+    border: 20px solid $gray-96;
+
+    img{
+      position: absolute;
+      top: 40px;
+      left: -105px;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__descr{
+    position: absolute;
+    top: 40px;
+    left: 245px;
+  }
+
+  &__title{
+    margin-bottom: 29px;
+    display: block;
+    line-height: 1;
+    font-size: 40px;
+    font-weight: 700;
+    color: $brand-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__subheading{
+    display: inline-block;
+    color: $brand-accent;
+    margin-right: 80px;
+    margin-bottom: 31px;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  &__list{
+    list-style: none;
+    margin: 0;
+    color: $brand-accent;
+    padding: 0;
+
+    li{
+      margin-bottom: 11px;
+    }
+  }
+}

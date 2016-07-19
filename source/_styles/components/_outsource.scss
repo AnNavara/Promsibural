@@ -1,0 +1,91 @@
+.outsource {
+  &__descr {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      right: -39%;
+      width: 190px;
+      height: 190px;
+      content: "";
+      background: url("../img/icon-world--big.png") no-repeat center center #fff;
+      border-radius: 50%;
+    }
+  }
+
+  &__title {
+    margin-top: 51px;
+    margin-bottom: 46px;
+    font-size: $font-size-h2--mod;
+    text-align: center;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    width: calc(25.8% - 3px);
+    min-height: 290px;
+    padding: 102px 33px 5px 40px;
+    margin-right: 3px;
+    margin-bottom: 51px;
+    margin-left: -0.22em;
+    vertical-align: top;
+    background-color: #fff;
+
+    p {
+      font-size: $font-size--menu;
+      line-height: 1.5;
+    }
+
+    &:first-child {
+      width: calc(24.2% - 3px);
+      margin-left: 0;
+    }
+
+    &:nth-child(4n) {
+      width: calc(24.2% - 3px);
+      margin-right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 36px;
+      left: 40px;
+      width: 40px;
+      height: 40px;
+      content: "";
+      background-image: url("../img/icon-checked.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &__contacts {
+    text-align: center;
+
+    span {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  &__phone {
+    display: inline-block;
+    padding: 24px 41px 20px;
+    margin-bottom: 28px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+
+    a {
+      display: block;
+      margin-bottom: 18px;
+      font-size: $font-size-h2--mod;
+      line-height: 1;
+      color: $brand-primary;
+      letter-spacing: 0.02em;
+    }
+  }
+}

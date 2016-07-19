@@ -1,0 +1,66 @@
+.service {
+  position: relative;
+  min-height: 304px;
+  padding: 39px 32px 30px 37px;
+  margin-top: -53px;
+  margin-bottom: 82px;
+  color: $brand-primary;
+  background-color: #fff;
+
+  &__link {
+    display: inline-block;
+    width: 50px;
+    margin-right: 40px;
+    font-size: $font-size--base;
+    color: $brand-accent;
+  }
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    content: "";
+    background: url("../img/icon-arrow-up.png") no-repeat center center $brand-blend;
+    border-radius: 50%;
+    transition: transform 0.6s ease;
+  }
+
+  &:hover::before {
+    transform: rotateY(180deg);
+  }
+
+  &--import::before {
+    background-image: url("../img/icon-arrow-down.png");
+  }
+
+  &--outsource {
+    padding-right: 80px;
+    &::before {
+      background-image: url("../img/icon-world.png");
+    }
+
+    > .service__link {
+      width: auto;
+    }
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: $line-height-base;
+    color: currentColor;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  p {
+    margin-bottom: 23px;
+    font-size: $font-size--base;
+    line-height: 1.6;
+    color: $brand-blue-graish;
+  }
+}

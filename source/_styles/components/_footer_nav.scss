@@ -1,0 +1,51 @@
+.footer-nav {
+  ul {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 10px 49px 10px 27px;
+    margin: 0;
+    list-style: none;
+
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      content: "";
+      border-left: 1px solid $brand-blue-lighten;
+    }
+
+    li {
+      margin-bottom: 21px;
+      line-height: 1.2;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before{
+        display: none;
+      }
+    }
+  }
+
+
+  &__item {
+    display: block;
+    font-size: $font-size--small;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    &--accent {
+      color: $brand-color;
+    }
+  }
+}

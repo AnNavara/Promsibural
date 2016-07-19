@@ -1,0 +1,104 @@
+footer {
+  font-size: $font-size--small;
+  background-color: $brand-darken;
+}
+
+.page-footer {
+  padding-top: 58px;
+  padding-bottom: 52px;
+  margin-bottom: 50px;
+  color: #fff;
+  border-bottom: 1px solid $brand-blue-lighten;
+
+  &__links{
+    padding-left: 30px;
+  }
+
+  &__call-head {
+    position: relative;
+    padding: 0;
+    line-height: 1.4;
+    color: $brand-color;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: $brand-color--active;
+    }
+
+    &::before {
+      position: absolute;
+      top: -6px;
+      left: -32px;
+      width: 23px;
+      height: 32px;
+      content: "";
+      background: url("../img/icon-dialog--white.png") no-repeat center 6px transparent;
+    }
+  }
+
+  &__phone {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: inherit;
+
+    &:hover {
+      color: $gray-76;
+    }
+  }
+
+  &__request-call,
+  &__email {
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: $brand-color;
+
+    &:hover {
+      color: $brand-color--active;
+    }
+  }
+
+  &__icq,
+  &__skype {
+    position: relative;
+    display: block;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    color: #fff;
+
+    &:hover {
+      color: $gray-76;
+    }
+  }
+
+  &__icq {
+    &::before {
+      left: -27px;
+      background: url("../img/icon-icq--white.png") no-repeat 0 0;
+    }
+  }
+
+  &__skype {
+    &::before {
+      left: -27px;
+      background: url("../img/icon-skype--white.png") no-repeat 0 0;
+    }
+  }
+
+  &__copyright {
+    margin-top: 28px;
+    font-size: 14px;
+    color: $brand-blue-lighten;
+
+    span {
+      float: right;
+      font-size: inherit;
+      color: inherit;
+    }
+  }
+}

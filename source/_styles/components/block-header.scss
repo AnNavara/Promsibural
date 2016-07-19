@@ -1,0 +1,39 @@
+.block-header {
+  margin-bottom: 35px;
+  > span {
+    display: inline-block;
+    min-width: 50%;
+    max-width: 100%;
+    text-align: left;
+    vertical-align: baseline;
+  }
+
+  span {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  .accent {
+    font-weight: 700;
+    color: $brand-color;
+    letter-spacing: 0.05em;
+  }
+
+  > a {
+    display: inline-block;
+    min-width: 50%;
+    max-width: 100%;
+    margin-left: -4px;
+    text-align: right;
+    color: $brand-color;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &:hover,
+    &:focus{
+      color: $brand-color--active;
+    }
+  }
+}

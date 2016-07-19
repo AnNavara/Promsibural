@@ -1,0 +1,45 @@
+{
+  "name": "promsibural",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error no test specified\" && exit 1",
+    "gulp": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "Navara",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "browser-sync": "^2.13.0",
+    "critical": "^0.7.3",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-csso": "^2.0.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-remove-empty-lines": "0.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "htmlhint-stylish": "^1.0.3",
+    "postcss-flexbugs-fixes": "^2.0.0",
+    "postcss-merge-rules": "^2.0.9",
+    "postcss-unique-selectors": "^2.0.2",
+    "postcss-zindex": "^2.1.1",
+    "stream-combiner2": "^1.1.1"
+  }
+}

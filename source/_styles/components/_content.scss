@@ -1,0 +1,127 @@
+.content {
+  width: 805px;
+  max-width: 100%;
+  padding-left: 8.7%;
+
+  .with-aside {
+    position: relative;
+  }
+
+  aside {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 14.7%;
+
+    p {
+      font-size: $font-size--small;
+      line-height: 1.5;
+      color: $brand-primary;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 10px;
+      font-size: $font-size--small;
+      color: $blue-brand--blend;
+    }
+
+    a {
+      display: block;
+      font-size: $font-size--base;
+    }
+
+    .hanged{
+      position: absolute;
+      display: inline;
+      right: 102%;
+      font-size: 0.9em;
+    }
+  }
+
+  p + aside {
+    top: 2px;
+    width: 180px;
+  }
+
+  .with-img {
+    position: relative;
+    top: 4px;
+    float: right;
+    width: 360px;
+    max-width: 55.5%;
+    margin-right: -37.3%;
+    margin-left: 10.7%;
+
+    img {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: block;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: $line-height-base;
+      color: $brand-primary;
+    }
+  }
+
+  blockquote {
+    width: 808px;
+    max-width: 114.9%;
+    padding: 25px 30px 26px 39px;
+    margin-top: 34px;
+    margin-bottom: 44px;
+    margin-left: -14.4%;
+    font-size: $font-size--large;
+    line-height: 1.55;
+    color: $brand-primary;
+    background-color: #fff;
+  }
+
+  .table-wrapper {
+    width: 807px;
+    max-width: 120.6%;
+    padding: 34px 40px 26px 40px;
+    margin-top: 38px;
+    margin-bottom: 42px;
+    margin-left: -14.4%;
+    background-color: #fff;
+  }
+
+  table {
+    width: 100%;
+
+    caption {
+      display: block;
+      margin-bottom: 17px;
+      font-size: $font-size--base;
+      font-weight: 700;
+      line-height: $line-height-base;
+      color: $brand-primary;
+      text-align: left;
+      letter-spacing: 0.05em;
+    }
+
+    tr {
+      border-bottom: 1px solid $gray-91;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    td {
+      padding: 12px 80px 12px 0;
+      font-size: $font-size--base;
+      font-weight: 300;
+      color: $brand-primary;
+      text-align: center;
+
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+}

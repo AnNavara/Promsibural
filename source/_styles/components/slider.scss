@@ -1,0 +1,18 @@
+.slider {
+  height: 278px;
+  border: 16px solid $blue-dark;
+
+  &__item{
+    padding: 38px 84px 36px 47px;
+
+    h1{
+      font-size: $font-size-h3;
+      line-height: 1;
+      letter-spacing: 0.05em;
+      font-weight: 300;
+      margin-bottom: 25px;
+      color: #fff;
+      text-align: left;
+    }
+  }
+}

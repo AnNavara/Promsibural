@@ -1,0 +1,50 @@
+.page-header {
+  padding-top: 22px;
+  background-color: #fff;
+
+  &__phone {
+    display: block;
+    padding-left: 40px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    color: $brand-primary;
+    letter-spacing: 0.02em;
+
+    &:hover {
+      color: $brand-blue-light;
+    }
+  }
+
+  &__request-call {
+    padding-left: 40px;
+    margin-right: 30px;
+  }
+
+  &__call-head {
+    position: relative;
+    float: right;
+    width: 132px;
+    padding: 8px 16px;
+    margin-top: 20px;
+    font-size: $font-size--small;
+    line-height: 1.23;
+    color: $brand-accent;
+    background-color: transparent;
+    border: 3px solid $brand-color;
+
+    &:hover {
+      border-color: $brand-color--active;
+    }
+
+    &::before {
+      position: absolute;
+      top: 7px;
+      left: -13px;
+      width: 23px;
+      height: 32px;
+      content: "";
+      background: url("../img/icon-dialog.png") no-repeat center 6px #fff;
+    }
+  }
+}

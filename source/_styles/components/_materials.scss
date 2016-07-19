@@ -1,0 +1,49 @@
+.materials {
+  margin-bottom: 48px;
+  color: #fff;
+
+  &__title {
+    margin-bottom: 53px;
+  }
+
+  h1 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  img {
+    margin-bottom: 26px;
+    background-color: #fff;
+  }
+
+  p {
+    padding-right: 50px;
+    margin-bottom: 26px;
+    font-size: $font-size--base;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  section {
+    padding-right: 10px;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 8px 26px;
+    font-size: $font-size--base;
+    color: $brand-primary;
+
+    &:hover,
+    &:focus {
+      color: $brand-primary;
+    }
+  }
+}

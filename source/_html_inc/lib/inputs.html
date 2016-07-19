@@ -1,0 +1,60 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <span class="tag">[button]</span>
+        <p>The button element represents a button. If the element is not disabled, then the user agent should allow the user to activate the button.</p>
+        <button name="myButton" type="button">Click me</button>
+
+        <span class="tag">[datalist]</span>
+        <p>The datalist element is hooked up to an input element using the list attribute on the input element.</p>
+        <input type="text" name="locations" list="places">
+        <datalist id="places">
+           <option>Amman Jordan</option>
+           <option>New York NY USA</option>
+           <option>Paris France</option>
+           <option>Vienna Austria</option>
+        </datalist>
+      </div>
+    </div>
+  </div>
+
+
+
+  <span class="tag">[form, fieldset, legend, select, optgroup, option]</span>
+  <p>The form element represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.</p>
+  <p>The legend element represents a caption for the rest of the contents of the legend element's parent fieldset element, if any.</p>
+  <p>The select element represents a control for selecting amongst a set of options.</p>
+  <p>When showing option elements in select elements, user agents should show the option elements of such groups as being related to each other and separate from other option elements.</p>
+  <p>In certain circumstances described in the definition of the select element, an option element can be a select element's placeholder label option. A placeholder label option does not represent an actual option, but instead represents a label for the select control.</p>
+  <form action="https://example.microsoft.com/sample.asp" method="post">
+    <fieldset>
+      <legend>User credentials</legend>
+      Enter your name: <input name="FName"/><br/>
+      Favorite Ice Cream Flavor:
+      <select name="Flavor">
+        <optgroup label="Alkaline Metals">
+          <option>Lithium (Li)</option>
+          <option>Sodium (Na)</option>
+          <option>Potassium (K)</option>
+        </optgroup>
+        <optgroup label="Flavor Metals">
+          <option value="Chocolate">Chocolate</option>
+          <option value="Strawberry">Strawberry</option>
+          <option value="Vanilla" selected="selected">Vanilla</option>
+        </optgroup>
+      </select>
+      <p><input type="submit"/></p>
+    </fieldset>
+  </form>
+
+  <span class="tag">[textarea]</span>
+  <p>The textarea element represents a multiline plain text edit control for the element's raw value. The contents of the control represent the control's default value.</p>
+  <textarea style="overflow:hidden" id="txtComments">
+    The patient is in stable border="1" condition after suffering an attack of
+    the insatiable munchies.
+  </textarea>
+
+  <span class="tag">[progress]</span>
+  <p>Represents the completion progress of a task. Progress may be either indeterminate — meaning it is unclear how much work remains before the task is complete (e.g., the task is waiting for a response from a remote host) — or a numeric value between 0 and a given maximum, explicitly specifying the fraction of work that has so far been completed.</p>
+  <progress value="165" max="200">165 of 200 finished</progress>
