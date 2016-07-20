@@ -20,7 +20,7 @@
     }
   }
 
-  &__form {
+  &-form {
     width: 100%;
     padding: 38px 58px 57px 58px;
     margin-top: 50px;
@@ -30,22 +30,26 @@
       margin-top: 0;
     }
 
-    input:not([type="submit"]) {
+    &__text {
       width: 100%;
       padding: 10px 0;
       margin-bottom: 24px;
-      color: $brand-color;
+      color: #fff;
       background: transparent;
       border: none;
       border-bottom: 1px solid $brand-yellow;
 
+      &:focus{
+        outline: none;
+      }
+
       &::placeholder {
         color: $brand-color;
       }
-    }
 
-    input[type="tel"] {
-      margin-bottom: 40px;
+      &--mar {
+        margin-bottom: 40px;
+      }
     }
 
     input[type="submit"] {

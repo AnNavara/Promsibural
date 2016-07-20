@@ -1,9 +1,28 @@
-.materials {
-  margin-bottom: 48px;
-  color: #fff;
+.materials{
+  &--main {
+    margin-bottom: 48px;
+    color: #fff;
+  }
 
-  &__title {
+  &__title{
     margin-bottom: 53px;
+  }
+}
+
+.materials-page {
+  padding-bottom: 105px;
+}
+
+.material {
+  display: inline-block;
+  width: 360px;
+  padding-right: 10px;
+  margin-right: 41px;
+  margin-bottom: 78px;
+  vertical-align: top;
+
+  &:nth-child(3n) {
+    margin-right: 0;
   }
 
   h1 {
@@ -11,7 +30,7 @@
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
-    color: #fff;
+    color: inherit;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -24,26 +43,9 @@
 
   p {
     padding-right: 50px;
-    margin-bottom: 26px;
+    margin-bottom: 32px;
     font-size: $font-size--base;
     font-weight: 300;
-    color: #fff;
-  }
-
-  section {
-    padding-right: 10px;
-    margin-bottom: 60px;
-  }
-
-  &__link {
-    display: inline-block;
-    padding: 8px 26px;
-    font-size: $font-size--base;
-    color: $brand-primary;
-
-    &:hover,
-    &:focus {
-      color: $brand-primary;
-    }
+    color: inherit;
   }
 }

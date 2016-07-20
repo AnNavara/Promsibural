@@ -32,8 +32,12 @@
     color: $brand-accent;
     background-color: transparent;
     border: 3px solid $brand-color;
+    transition: border-color 0.15s linear,
+                color 0.15s linear;
 
-    &:hover {
+    &:hover,
+    &:focus {
+      color: $brand-color--darken;
       border-color: $brand-color--active;
     }
 

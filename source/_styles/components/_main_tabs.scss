@@ -11,7 +11,7 @@
   &__menu {
     float: left;
     width: 201px;
-    margin-top: 5px;
+    margin-top: 4px;
 
     ul {
       padding: 0;
@@ -21,16 +21,20 @@
 
     li {
       display: block;
-      margin-bottom: 6px;
+      margin-bottom: 0;
+
+      &::before {
+        display: none;
+      }
     }
 
     button {
       display: block;
       width: 100%;
-      padding: 11px 25px;
+      padding: 10px 25px 9px 25px;
       font-size: $font-size-h5;
-      color: $brand-primary;
       font-weight: 300;
+      color: $brand-primary;
       text-align: left;
       background: transparent;
       border: none;
@@ -57,7 +61,7 @@
     height: 100%;
     border: 20px solid $gray-96;
 
-    img{
+    img {
       position: absolute;
       top: 40px;
       left: -105px;
@@ -68,40 +72,44 @@
     }
   }
 
-  &__descr{
+  &__descr {
     position: absolute;
     top: 40px;
     left: 245px;
   }
 
-  &__title{
-    margin-bottom: 29px;
+  &__title {
     display: block;
-    line-height: 1;
+    margin-bottom: 29px;
     font-size: 40px;
     font-weight: 700;
+    line-height: 1;
     color: $brand-primary;
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
 
-  &__subheading{
+  &__subheading {
     display: inline-block;
-    color: $brand-accent;
     margin-right: 80px;
     margin-bottom: 31px;
-    font-weight: 300;
     font-size: 20px;
+    font-weight: 300;
+    color: $brand-accent;
   }
 
-  &__list{
-    list-style: none;
+  &__list {
+    padding: 0;
     margin: 0;
     color: $brand-accent;
-    padding: 0;
+    list-style: none;
 
-    li{
+    li {
       margin-bottom: 11px;
+
+      &::before {
+        display: none;
+      }
     }
   }
 }
