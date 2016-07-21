@@ -23,6 +23,7 @@
   "sort-order": [
     [
       "position",
+      "content",
       "top",
       "right",
       "bottom",
@@ -129,7 +130,6 @@
       "caption-side",
       "border-spacing",
       "border-collapse",
-      "content",
       "quotes",
       "counter-reset",
       "counter-increment",

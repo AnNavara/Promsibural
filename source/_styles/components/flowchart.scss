@@ -1,0 +1,169 @@
+.flowchart {
+  padding: 69px 13% 93px 13%; //152px
+  background-color: #fff;
+
+  @media (min-width: $screen-lg-min) {
+    padding: 69px 152px 93px 152px;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 39px;
+    color: $brand-accent;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  &__wrapper {
+    @include clearfix;
+    margin-top: -42px;
+
+    &:first-of-type{
+      margin-top: 0;
+
+      .flowchart__step {
+        margin-top: 0;
+
+        &::before{
+          height: 50%;
+          top: 50%;
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      .flowchart__step {
+        float: right;
+        &::before{
+          left: -14.4%;
+
+          @media (min-width: $screen-md-min) {
+            left: -14.2%;
+          }
+
+          @media (min-width: $screen-lg-min) {
+            left: -54px;
+          }
+        }
+        &::after{
+          left: -12.6%;
+
+          @media (min-width: $screen-lg-min) {
+            left: -48px;
+          }
+        }
+      }
+    }
+  }
+
+  &__step {
+    position: relative;
+    width: 44.2%; //382px
+    float: left;
+
+    @media (min-width: $screen-lg-min) {
+      width: 382px;
+    }
+
+    &::before{
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -14.5%; //-52px
+      width: 6px;
+      height: 100%;
+      background-color: $brand-accent;
+
+      @media (min-width: $screen-md-min) {
+        right: -14.1%;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        right: -54px;
+      }
+    }
+
+    &::after{
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: -12.6%; //-48px
+      width: 16px;
+      height: 6px;
+      background-color: $brand-accent;
+
+      @media (min-width: $screen-lg-min) {
+        right: -48px;
+      }
+    }
+
+    span {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+      margin-right: -2px;
+      color: $brand-accent;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    p {
+      display: block;
+      margin-top: -2px;
+      padding: 26px 60px 21px 44px;
+      background-color: $brand-color;
+    }
+  }
+
+  &__end{
+    position: relative;
+    padding-left: 60%;
+
+    span{
+      position: relative;
+      display: block;
+      top: -9px;
+      font-size: 16px;
+      line-height: $line-height-base;
+      color: $brand-primary;
+    }
+
+    &::before{
+      position: absolute;
+      content: "";
+      left: calc(50% - 32px);
+      top: 0;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 6px solid $brand-accent;
+      background: url("../img/icon-checker.png") no-repeat center;
+    }
+  }
+  &__phone{
+    font-size: $font-size-h2--mod;
+    color: $brand-primary;
+    letter-spacing: 0.02em;
+  }
+}
+
+.export-page{
+  padding-bottom: 140px;
+
+  &__descr{
+    position: relative;
+    margin-bottom: 55px;
+
+    &::after{
+      position: absolute;
+      content: "";
+      right: -39%;
+      top: 10px;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+      background: url("../img/icon-arrow-up--big.png") no-repeat center #fff;
+    }
+  }
+}

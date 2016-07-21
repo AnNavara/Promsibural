@@ -22,13 +22,13 @@ module.exports = function(options) {
       // $.sourcemaps.init(),
       $.sass(),
       $.postcss([
-        //require('postcss-devtools')({precise: true}),
+        // require('postcss-devtools')({precise: true}),
         postcssZIndex,
         postcssMQPacker({
           sort: true
         }),
         postcssUS,
-        postcssMR,
+        // postcssMR,
         postcssFF,
         autoprefixer({ browsers: ['> 2.5% in RU', 'last 2 version', 'ie 9', 'ios 6'], flexbox: 'no-2009'})
       ]),

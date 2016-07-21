@@ -7,6 +7,11 @@
   color: $brand-primary;
   background-color: #fff;
 
+  &--mar{
+    margin-top: 6px;
+    margin-bottom: 76px;
+  }
+
   &__link {
     display: inline-block;
     width: 50px;
