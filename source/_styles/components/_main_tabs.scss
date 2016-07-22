@@ -4,8 +4,12 @@
 
   &__wrapper {
     height: 481px;
-    padding: 63px 84px 63px 53px;
+    padding: 63px 54px 63px 30px;
     background-color: #fff;
+
+    @media (min-width: $screen-lg-min) {
+      padding: 63px 84px 63px 53px;
+    }
   }
 
   &__menu {
@@ -55,11 +59,16 @@
   &__item {
     position: absolute;
     top: 0;
-    left: 137px;
+    left: 0;
     display: none;
-    width: calc(100% - 137px);
+    width: 100%;
     height: 100%;
     border: 20px solid $gray-96;
+
+    @media (min-width: $screen-lg-min) {
+      left: 137px;
+      width: calc(100% - 137px);
+    }
 
     img {
       position: absolute;

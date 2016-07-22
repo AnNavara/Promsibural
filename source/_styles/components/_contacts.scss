@@ -4,10 +4,14 @@
   &__request-call,
   &__email{
     padding: 0;
-    font-size: $font-size--small;
+    font-size: 12px;
     color: $brand-accent;
     background: transparent;
     border: none;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size--small;
+    }
 
     &:hover{
       color: $brand-color--darken;
@@ -18,10 +22,13 @@
   &__skype{
     position: relative;
     display: block;
-    padding-left: 67px;
     font-size: $font-size--small;
     line-height: 1.5;
     color: currentColor;
+
+    @media (min-width: $screen-lg-min) {
+      padding-left: 67px;
+    }
 
     &:hover{
       color: $brand-blue-light;
@@ -35,10 +42,14 @@
       position: absolute;
       content: " ";
       top: 2px;
-      left: 43px;
+      left: -20px;
       width: 14px;
       height: 14px;
       background: url("../img/icon-icq.png") no-repeat 0 0 transparent;
+
+      @media (min-width: $screen-lg-min) {
+        left: 43px;
+      }
     }
   }
 
@@ -49,10 +60,14 @@
       position: absolute;
       content: " ";
       top: 2px;
-      left: 43px;
+      left: -20px;
       width: 15px;
       height: 16px;
       background: url("../img/icon-skype.png") no-repeat 0 0 transparent;
+
+      @media (min-width: $screen-lg-min) {
+        left: 43px;
+      }
     }
   }
 }

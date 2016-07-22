@@ -4,12 +4,17 @@
 
   &__phone {
     display: block;
-    padding-left: 40px;
     margin-top: 20px;
+    margin-bottom: 9px;
     font-size: 24px;
     font-weight: 300;
     color: $brand-primary;
     letter-spacing: 0.02em;
+
+    @media (min-width: $screen-lg-min) {
+      margin-bottom: 0;
+      padding-left: 40px;
+    }
 
     &:hover {
       color: $brand-blue-light;
@@ -17,8 +22,12 @@
   }
 
   &__request-call {
-    padding-left: 40px;
-    margin-right: 30px;
+    margin-right: 12px;
+
+    @media (min-width: $screen-lg-min) {
+      padding-left: 40px;
+      margin-right: 30px;
+    }
   }
 
   &__call-head {

@@ -1,7 +1,15 @@
 .content {
-  width: 805px;
+  width: 555px;
   max-width: 100%;
   padding-left: 8.7%;
+
+  @media (min-width: $screen-md-min) {
+    width: 630px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    width: 805px;
+  }
 
   .with-aside {
     position: relative;
@@ -50,8 +58,7 @@
     float: right;
     width: 360px;
     max-width: 55.5%;
-    margin-right: -37.3%;
-    margin-left: 10.7%;
+    margin: 0 -37.3% 1em 10.7%;
 
     img {
       display: block;

@@ -9,9 +9,13 @@
   }
 
   span {
-    font-size: 32px;
+    font-size: 29px;
     font-weight: 300;
     text-transform: uppercase;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: 32px;
+    }
   }
 
   .accent {

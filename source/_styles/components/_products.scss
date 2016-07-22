@@ -29,6 +29,12 @@
     vertical-align: top;
     background-color: #fff;
 
+    @media (min-width: $screen-lg-min) {
+      &:nth-child(3n-2) {
+        margin-left: 0;
+      }
+    }
+
     img {
       max-height: 100%;
       max-width: 100%;
@@ -41,10 +47,6 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-    }
-
-    &:nth-child(3n-2) {
-      margin-left: 0;
     }
   }
 

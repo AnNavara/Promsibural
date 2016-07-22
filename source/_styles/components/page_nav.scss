@@ -18,8 +18,8 @@
 
   &__item {
     display: inline-block;
-    padding: 16px 33px;
-    font-size: $font-size--menu;
+    padding: 16px 1.195em;
+    font-size: 12px;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -27,6 +27,16 @@
     background-color: $brand-primary;
     border-left: 1px solid $brand-dark;
     transition: background-color 0.15s linear;
+
+    @media (min-width: $screen-md-min) {
+      padding: 16px 1.26em;
+      font-size: 13px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      padding: 16px 33px;
+      font-size: $font-size--menu;
+    }
 
     &:hover,
     &:focus {

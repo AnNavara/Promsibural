@@ -6,13 +6,25 @@
   background-color: $brand-blend;
 
   &__title {
-    width: 165.5%;
+    width: 112.9%;
     padding-top: 82px;
-    margin-left: -13.9%;
+    margin-left: -9.8%;
+
+
+    @media (min-width: $screen-xs-min) {
+      width: 165.5%;
+      padding-top: 82px;
+      margin-left: -13.9%;
+    }
 
     &--alt {
       width: 100%;
       margin-left: 0;
+
+      @media (min-width: $screen-xs-min) {
+        width: 100%;
+        margin-left: 0;
+      }
     }
 
     span {

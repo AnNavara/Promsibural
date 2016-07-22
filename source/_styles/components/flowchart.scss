@@ -37,7 +37,7 @@
       .flowchart__step {
         float: right;
         &::before{
-          left: -14.4%;
+          left: -14%;
 
           @media (min-width: $screen-md-min) {
             left: -14.2%;

@@ -15,11 +15,16 @@
 
 .material {
   display: inline-block;
-  width: 360px;
+  width: 29.5%;
   padding-right: 10px;
-  margin-right: 41px;
+  margin-right: 5%;
   margin-bottom: 78px;
   vertical-align: top;
+
+  @media (min-width: $screen-lg-min) {
+    width: 360px;
+    margin-right: 41px;
+  }
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -39,6 +44,9 @@
   img {
     margin-bottom: 26px;
     background-color: #fff;
+    width: 90%;
+    max-width: 261px;
+    max-height: 400px;
   }
 
   p {

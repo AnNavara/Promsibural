@@ -1,9 +1,9 @@
 .slider {
-  height: 278px;
+  min-height: 278px;
   border: 16px solid $blue-dark;
 
   &__item{
-    padding: 38px 84px 36px 47px;
+    padding: 38px 84px 22px 47px;
 
     h1{
       font-size: $font-size-h3;

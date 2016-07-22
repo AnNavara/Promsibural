@@ -67,9 +67,13 @@
   }
 
   &__meaningful {
-    font-size: $font-size-h4;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.45;
     color: currentColor;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: $font-size-h4;
+    }
   }
 }

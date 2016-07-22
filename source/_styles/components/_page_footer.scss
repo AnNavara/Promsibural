@@ -10,15 +10,17 @@ footer {
   color: #fff;
   border-bottom: 1px solid $brand-blue-lighten;
 
-  &__links{
+  &__links {
     padding-left: 30px;
   }
 
   &__call-head {
     position: relative;
     padding: 0;
+    font-weight: 300;
     line-height: 1.4;
     color: $brand-color;
+    text-align: left;
     background-color: transparent;
     border: none;
 
@@ -28,11 +30,11 @@ footer {
 
     &::before {
       position: absolute;
+      content: "";
       top: -6px;
       left: -32px;
       width: 23px;
       height: 32px;
-      content: "";
       background: url("../img/icon-dialog--white.png") no-repeat center 6px transparent;
     }
   }
@@ -53,8 +55,13 @@ footer {
   &__email {
     display: block;
     margin-bottom: 8px;
+    font-weight: 300;
     line-height: 1.4;
     color: $brand-color;
+
+    @media (min-width: $screen-lg-min) {
+      padding-left: 0;
+    }
 
     &:hover {
       color: $brand-color--active;
@@ -65,11 +72,16 @@ footer {
   &__skype {
     position: relative;
     display: block;
-    margin-top: 0;
     padding-left: 0;
+    margin-top: 0;
     margin-bottom: 8px;
+    font-weight: 300;
     line-height: 1.4;
     color: #fff;
+
+    @media (min-width: $screen-lg-min) {
+      padding-left: 0;
+    }
 
     &:hover {
       color: $gray-76;
@@ -80,6 +92,10 @@ footer {
     &::before {
       left: -27px;
       background: url("../img/icon-icq--white.png") no-repeat 0 0;
+
+      @media (min-width: $screen-lg-min) {
+        left: -27px;
+      }
     }
   }
 
@@ -87,6 +103,10 @@ footer {
     &::before {
       left: -27px;
       background: url("../img/icon-skype--white.png") no-repeat 0 0;
+
+      @media (min-width: $screen-lg-min) {
+        left: -27px;
+      }
     }
   }
 
