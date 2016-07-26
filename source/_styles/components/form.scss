@@ -1,0 +1,91 @@
+form {
+  width: 100%;
+  margin-top: 32px;
+
+  input[type="text"],
+  input[type="email"] {
+    // width: 100%;
+    padding: 10px 0;
+    margin-bottom: 24px;
+    font-weight: 300;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $brand-yellow;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-weight: 300;
+      color: $brand-color;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  input[type="file"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    opacity: 0;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    opacity: 0;
+  }
+
+  input[type="radio"] + label {
+    position: relative;
+    padding: 0 0 0 26px;
+    margin-right: 30px;
+    font-size: 17px;
+    line-height: $line-height-base;
+    color: $brand-color;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: background-color 0.15s linear;
+    }
+  }
+
+  input[type="radio"]:checked + label::after {
+    background-color: $blue-blend--3;
+  }
+
+  input[type="text"] + input[type="submit"] {
+    margin-top: 16px;
+  }
+
+  input[type="submit"] {
+    // width: 100%;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    font-size: $font-size--menu;
+    color: $brand-primary;
+  }
+}
+
+label {
+  cursor: pointer;
+}

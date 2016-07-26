@@ -12,3 +12,9 @@
 10. [Услуги](https://annavara.github.io/promsibural-host/service.html)
 11. [Экспорт](https://annavara.github.io/promsibural-host/export.html)
 12. Модальные окна
+
+## Нужно сделать
+
+*   Написать джс для открытия модальных окон
+*   Сверстать переключалку слайдера
+*   Джс для слайдера

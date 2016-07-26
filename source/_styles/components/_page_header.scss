@@ -12,21 +12,40 @@
     letter-spacing: 0.02em;
 
     @media (min-width: $screen-lg-min) {
-      margin-bottom: 0;
       padding-left: 40px;
+      margin-bottom: 0;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $brand-blue-light;
+      outline: none;
+    }
+
+    &:focus {
+      text-shadow: 1px 1px 3px rgba(32, 101, 141, 0.3);
     }
   }
 
   &__request-call {
     margin-right: 12px;
 
+    &:focus {
+      text-shadow: 1px 1px 3px rgba(5, 104, 104, 0.3);
+      outline: none;
+    }
+
     @media (min-width: $screen-lg-min) {
       padding-left: 40px;
       margin-right: 30px;
+    }
+  }
+
+  &__email,
+  &__skype {
+    &:focus {
+      text-shadow: 1px 1px 3px rgba(5, 104, 104, 0.3);
+      outline: none;
     }
   }
 
@@ -37,26 +56,32 @@
     padding: 8px 16px;
     margin-top: 20px;
     font-size: $font-size--small;
+    font-weight: 400;
     line-height: 1.23;
     color: $brand-accent;
     background-color: transparent;
     border: 3px solid $brand-color;
     transition: border-color 0.15s linear,
-                color 0.15s linear;
+    color 0.15s linear;
 
     &:hover,
     &:focus {
       color: $brand-color--darken;
       border-color: $brand-color--active;
+      outline: none;
+    }
+
+    &:focus{
+      border-color: darken($brand-color--active, 12%);
     }
 
     &::before {
       position: absolute;
+      content: "";
       top: 7px;
       left: -13px;
       width: 23px;
       height: 32px;
-      content: "";
       background: url("../img/icon-dialog.png") no-repeat center 6px #fff;
     }
   }

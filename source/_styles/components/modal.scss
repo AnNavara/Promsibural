@@ -1,0 +1,150 @@
+.modals {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 84px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  position: relative;
+  display: none;
+  width: 362px;
+  margin: 0 auto;
+  color: #fff;
+
+  &--thank {
+    display: none;
+    text-align: center;
+    background-color: $blue-blend--3;
+
+    h3 {
+      padding-bottom: 17px;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 41px;
+      font-size: 17px;
+      line-height: 1.5;
+      color: $brand-color;
+    }
+  }
+
+  &--ask-call {
+    display: none;
+    padding: 0 59px 61px;
+    background-color: $blue--joke;
+  }
+
+  &--big {
+    width: 664px;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &__title {
+    padding: 28px 0 24px;
+    // margin: 0 -59px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.05em;
+    background-color: $blue-blend--3;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 34px;
+    height: 34px;
+    background-color: #fff;
+    border: none;
+
+    &-btn {
+      display: block;
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: " ";
+      top: 6px;
+      left: 16px;
+      width: 2px;
+      height: 23px;
+      background-color: $brand-primary;
+      transition: background-color 0.15s linear;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: $brand-darken;
+    }
+  }
+}
+
+.estim-deal {
+  &__wrapper {
+    margin-top: 36px;
+  }
+
+  &__form {
+    padding: 32px 58px 58px;
+    margin: 0;
+    background-color: $blue--joke;
+  }
+
+  &__input {
+    width: 242px;
+
+    &--mar {
+      margin-right: 59px;
+    }
+
+    &--big {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: $line-height-base;
+  }
+
+  &__file {
+    font-size: 17px;
+    font-weight: 300;
+    color: $brand-color;
+  }
+
+  &__btn {
+    margin-top: 41px;
+    text-align: center;
+  }
+}

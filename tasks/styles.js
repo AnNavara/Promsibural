@@ -27,9 +27,9 @@ module.exports = function(options) {
         postcssMQPacker({
           sort: true
         }),
-        postcssUS,
+        // postcssUS,
         // postcssMR,
-        postcssFF,
+        // postcssFF,
         autoprefixer({ browsers: ['> 2.5% in RU', 'last 2 version', 'ie 9', 'ios 6'], flexbox: 'no-2009'})
       ]),
       $.csscomb(),

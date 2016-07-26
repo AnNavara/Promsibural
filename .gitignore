@@ -5,3 +5,4 @@ tmp
 backup
 *.log
 todo.txt
+npm-debug*

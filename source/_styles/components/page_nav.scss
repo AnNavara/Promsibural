@@ -42,6 +42,7 @@
     &:focus {
       color: #fff;
       background-color: $brand-blue-light;
+      outline: none;
     }
 
     &:active{
@@ -63,8 +64,13 @@
       color: $brand-primary;
       background-color: $brand-color;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: $brand-color--active;
+      }
+
+      &:active{
+        background-color: lighten($brand-color--active, 3%);
       }
     }
   }

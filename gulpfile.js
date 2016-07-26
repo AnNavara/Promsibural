@@ -52,14 +52,14 @@ lazyRequireTask('serve', './tasks/serve', {
 });
 
 lazyRequireTask('js:main', './tasks/js', {
-  base: './build',
+  base: './source/_js/*.js',
   name: 'script.js',
-  dest: './build/lib'
+  dest: './build/js/'
 });
 
 lazyRequireTask('js:lib', './tasks/jsLib', {
-  base: './build',
-  dest: './build/lib'
+  base: './source/_js/lib/*.js',
+  dest: './build/js/lib'
 });
 
 // gulp.task('js', gulp.parallel('js:main', 'js:lib'));
@@ -85,9 +85,11 @@ gulp.task('watch', function() {
   gulp.watch('source/_styles/**/*.scss', gulp.series('styles'));
   gulp.watch('source/_img/*.{jpg,png}', gulp.series('assets:img'));
   gulp.watch('source/_img/*.svg', gulp.series('assets:svg', 'styles'));
+  gulp.watch('source/_js/*.js', gulp.series('js:main'));
+  gulp.watch('source/_js/lib/*.js', gulp.series('js:lib'));
 });
 
-gulp.task('build', gulp.series('html', 'styles', 'assets:img', 'watch'));
+gulp.task('build', gulp.series('html', 'js:lib', 'js:main', 'styles', 'assets:img', 'watch'));
 
 // gulp.task('production', 'prod',
 //   gulp.series(

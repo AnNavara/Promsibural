@@ -13,6 +13,7 @@ $gray-22:            lighten($gray-0, 22%);
 $gray-44:            lighten($gray-0, 44%);
 $gray-76:            lighten($gray-0, 76%);
 $gray-91:            lighten($gray-0, 91%);
+$gray-93:            lighten($gray-0, 93%);
 $gray-96:            lighten($gray-0, 96%);
 
 $brand-yellow:          #a3c995;
@@ -28,7 +29,9 @@ $brand-blue-light:      #20658d;
 $brand-blue-lighten:    #0f5278;
 $brand-blue-graish:     #5f727f;
 $blue-blend:            #205679;
+$blue-blend--3:         #20658d;
 $blue-blend--2:         #c4d1d8;
+$blue--joke:            #003e63;
 $blue-brand--blend:     #a0b4bf;
 $brand-blue-sky:        #7fa9c1;
 $brand-sky--dark:       #1a5c82;
@@ -208,7 +211,7 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Small screen / tablet
-$container-tablet:             (828px + $grid-gutter-width) !default;
+$container-tablet:             (88px + $grid-gutter-width) !default;
 //** For `$screen-sm-min` and up.
 $container-sm:                 $container-tablet !default;
 
