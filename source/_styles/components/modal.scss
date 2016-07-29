@@ -1,24 +1,29 @@
-.modals {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: none;
-  width: 100%;
-  height: 100%;
-  padding-top: 84px;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .modal {
-  position: relative;
-  display: none;
+  position: fixed;
+  z-index: 1010;
+  top: 82px;
+  left: 50%;
   width: 362px;
+  max-width: 100%;
   margin: 0 auto;
   color: #fff;
+  transform: translateX(-50%);
+
+  &--closed{
+    display: none;
+  }
+
+  &--overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 
   &--thank {
-    display: none;
     text-align: center;
     background-color: $blue-blend--3;
 
@@ -36,23 +41,13 @@
   }
 
   &--ask-call {
-    display: none;
     padding: 0 59px 61px;
     background-color: $blue--joke;
   }
 
-  &--big {
-    width: 664px;
-  }
-
-  &--active {
-    display: block;
-  }
-
   &__title {
     padding: 28px 0 24px;
-    // margin: 0 -59px;
-    margin: 0;
+    margin: 0 -59px;
     font-size: 24px;
     font-weight: 300;
     line-height: 1;
@@ -106,12 +101,17 @@
 }
 
 .estim-deal {
+  width: 664px;
+  padding: 0 59px 32px 59px;
+  max-width: 100%;
+  background-color: $blue--joke;
+
   &__wrapper {
     margin-top: 36px;
   }
 
   &__form {
-    padding: 32px 58px 58px;
+    padding-top: 32px;
     margin: 0;
     background-color: $blue--joke;
   }
@@ -120,7 +120,7 @@
     width: 242px;
 
     &--mar {
-      margin-right: 59px;
+      margin-right: 58px;
     }
 
     &--big {

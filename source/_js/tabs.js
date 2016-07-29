@@ -20,7 +20,6 @@
     tabs.querySelector('#' + activeTab).classList.remove('tabs__button--active');
     tabs.querySelector('#' + id).classList.add('tabs__button--active');
     activeTab = id;
-    console.log(activeTab);
     switchTab(activeTab);
   }
 

@@ -7,8 +7,8 @@
 
   li {
     display: inline-block;
-    margin-left: -0.28em;
     margin-bottom: 0;
+    margin-left: -0.28em;
     line-height: 1.2;
 
     &::before {
@@ -25,6 +25,7 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     background-color: $brand-primary;
+    border: none;
     border-left: 1px solid $brand-dark;
     transition: background-color 0.15s linear;
 
@@ -45,7 +46,7 @@
       outline: none;
     }
 
-    &:active{
+    &:active {
       color: #fff;
       background-color: lighten($brand-blue-light, 2%);
     }
@@ -53,7 +54,7 @@
 
   li:first-child {
     margin-left: 0;
-    .page-nav__item{
+    .page-nav__item {
       border-left: none;
     }
   }
@@ -69,7 +70,7 @@
         background-color: $brand-color--active;
       }
 
-      &:active{
+      &:active {
         background-color: lighten($brand-color--active, 3%);
       }
     }

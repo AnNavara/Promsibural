@@ -1,61 +1,55 @@
-<div class="modals">
+<div  class="modal--overlay modal--closed">
+</div>
 
-  <div class="modal _js-modal_ask-call">
-    <button class="modal__close" type="button" name="button" role="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-    <div class="modal--ask-call">
-      <h3 class="modal__title">Заказать звонок</h3>
-      <form class="form_" action="" method="post">
-        <input type="text" name="name" placeholder="Ваше имя" required>
-        <input type="text" name="phone" placeholder="Номер телефона" required>
-        <input class="btn" type="submit" name="submit" value="Заказать звонок">
-      </form>
+<div  class="modal modal--ask-call modal--closed">
+  <button class="modal__close" type="button" name="button" role="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <h3 class="modal__title">Заказать звонок</h3>
+  <form class="form_" action="" method="post">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="text" name="phone" placeholder="Номер телефона" required>
+    <input class="btn" type="submit" name="submit" value="Заказать звонок">
+  </form>
+</div>
+
+<div  class="modal modal--thank modal--closed">
+  <h3 class="modal__title">Спасибо!</h3>
+  <span>Мы свяжемся с вами<br> в ближайшее время!</span>
+  <button class="modal__close-btn btn" type="button" name="button">Закрыть</button>
+</div>
+
+<div  class="modal estim-deal modal--closed">
+  <button class="modal__close" type="button" name="button" role="button">
+    <span class="visually-hidden">Закрыть</span>
+  </button>
+  <h3 class="modal__title">Рассчитать сделку</h3>
+  <form class="estim-deal__form" action="index.html" method="post">
+    <div>
+      <input class="estim-deal__input estim-deal__input--mar" type="text" name="name" value="" placeholder="Ф.И.О." required>
+      <input class="estim-deal__input" type="text" name="organisation" value="" placeholder="Название организации" required>
+      <input class="estim-deal__input estim-deal__input--mar" type="text" name="phone_number" value="" placeholder="Номер телефона" required>
+      <input class="estim-deal__input" type="email" name="email" value="" placeholder="Email" required>
     </div>
-    <div class="modal--thank">
-      <h3 class="modal__title">Спасибо!</h3>
-      <span>Мы свяжемся с вами<br> в ближайшее время!</span>
-      <button class="modal__close-btn btn" type="button" name="button">Закрыть</button>
+    <div class="estim-deal__wrapper">
+      <input class="estim-deal__input--big" type="text" name="name" value="" placeholder="Наименование товара" required>
+      <input class="estim-deal__input estim-deal__input--mar" type="text" name="name" value="" placeholder="Кол-во товара" required>
+      <input class="estim-deal__input" type="text" name="name" value="" placeholder="Цена за 1 ед. товара с НДС" required>
     </div>
-  </div>
-
-  <div class="modal modal--big">
-    <button class="modal__close" type="button" name="button" role="button">
-      <span class="visually-hidden">Закрыть</span>
-    </button>
-    <div class="estim-deal">
-      <h3 class="modal__title">Рассчитать сделку</h3>
-      <form class="estim-deal__form" action="index.html" method="post">
-        <div>
-          <input class="estim-deal__input estim-deal__input--mar" type="text" name="name" value="" placeholder="Ф.И.О." required>
-          <input class="estim-deal__input" type="text" name="name" value="" placeholder="Название организации" required>
-          <input class="estim-deal__input estim-deal__input--mar" type="text" name="name" value="" placeholder="Номер телефона" required>
-          <input class="estim-deal__input" type="email" name="name" value="" placeholder="Email" required>
-        </div>
-        <div class="estim-deal__wrapper">
-          <input class="estim-deal__input--big" type="text" name="name" value="" placeholder="Наименование товара" required>
-          <input class="estim-deal__input estim-deal__input--mar" type="text" name="name" value="" placeholder="Кол-во товара" required>
-          <input class="estim-deal__input" type="text" name="name" value="" placeholder="Цена за 1 ед. товара с НДС" required>
-        </div>
-        <div class="estim-deal__wrapper">
-          <span class="estim-deal__text">Доставка товара до города назначения: </span>
-          <input type="radio" name="delivery" id="delivery-yes" checked>
-          <label for="delivery-yes">Да</label>
-          <input type="radio" name="delivery" id="delivery-no">
-          <label for="delivery-no">Нет</label>
-        </div>
-        <span class="estim-deal__text">Прикрепить файл:</span>
-        <label class="estim-deal__file">
-          Загрузить
-          <input type="file" name="" id="" value="Загрузить">
-        </label>
-        <div class="estim-deal__btn">
-          <input class="btn btn--big" type="submit" name="name" value="Отправить">
-        </div>
-      </form>
+    <div class="estim-deal__wrapper">
+      <span class="estim-deal__text">Доставка товара до города назначения: </span>
+      <input type="radio" name="delivery" id="delivery-yes" checked>
+      <label for="delivery-yes">Да</label>
+      <input type="radio" name="delivery" id="delivery-no">
+      <label for="delivery-no">Нет</label>
     </div>
-  </div>
-
-
-
+    <span class="estim-deal__text">Прикрепить файл:</span>
+    <label class="estim-deal__file">
+      Загрузить
+      <input type="file" name="" id="" value="Загрузить">
+    </label>
+    <div class="estim-deal__btn">
+      <input class="btn btn--big" type="submit" name="name" value="Отправить">
+    </div>
+  </form>
 </div>

@@ -1,18 +1,74 @@
 .slider {
-  min-height: 278px;
+  position: relative;
+  height: 322px;
+  overflow: hidden;
   border: 16px solid $blue-dark;
 
-  &__item{
-    padding: 38px 84px 22px 47px;
+  @media (min-width: $screen-lg-min) {
+    height: 278px;
+  }
 
-    h1{
-      font-size: $font-size-h3;
-      line-height: 1;
-      letter-spacing: 0.05em;
-      font-weight: 300;
+  &__controls {
+    position: absolute;
+    top: 97px;
+    right: 25px;
+    z-index: 50;
+    width: 20px;
+    height: 60px;
+
+    input {
+      width: 0;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+
+      &:checked::before {
+        background-color: $brand-color;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        border: 2px solid $brand-color;
+        border-radius: 50%;
+      }
+
+      &:nth-of-type(2)::before {
+        top: 22px;
+      }
+
+      &:nth-of-type(3)::before {
+        top: 44px;
+      }
+    }
+  }
+
+  &__item {
+    position: absolute;
+    padding: 38px 84px 22px 47px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &--active {
+      opacity: 1;
+    }
+
+    h1 {
       margin-bottom: 25px;
+      font-size: $font-size-h3;
+      font-weight: 300;
+      line-height: 1;
       color: #fff;
       text-align: left;
+      letter-spacing: 0.05em;
     }
   }
 }
