@@ -85,12 +85,28 @@ form {
     color: $brand-primary;
   }
 
-  input[type=text]:not([value=""]):invalid {
-    background-color: red;
-    border: red;
+  input:not([value=""]):not(:focus):invalid + .form__error-message {
+    display: block;
   }
 }
 
 label {
   cursor: pointer;
+}
+
+.form__error-holder {
+  position: relative;
+  display: block;
+  padding-bottom: 19px;
+}
+
+.form__error-message {
+  position: absolute;
+  width: 100%;
+  top: 43px;
+  left: 0;
+  display: none;
+  font-size: 12px;
+  color: $attention-color;
+  text-align: center;
 }
