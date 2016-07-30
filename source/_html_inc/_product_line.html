@@ -17,18 +17,18 @@
 
           <nav role="tablist" class="tabs__menu">
             <ul>
-              <li><button type="button">Китай</button></li>
-              <li><button type="button">Белоруссия</button></li>
-              <li><button type="button">Азербайджан</button></li>
-              <li><button type="button">Казахстан</button></li>
-              <li><button type="button">Киргизия</button></li>
-              <li><button type="button">Туркменистан</button></li>
-              <li><button type="button">Другие</button></li>
+              <li role="tab"><button class="tabs__button" id="tab-chn" role="button" type="button">Китай</button></li>
+              <li role="tab"><button class="tabs__button" id="tab-bel" role="button" type="button">Белоруссия</button></li>
+              <li role="tab"><button class="tabs__button" id="tab-aze" role="button" type="button">Азербайджан</button></li>
+              <li role="tab"><button class="tabs__button" id="tab-kaz" role="button" type="button">Казахстан</button></li>
+              <li role="tab"><button class="tabs__button" id="tab-kir" role="button" type="button">Киргизия</button></li>
+              <li role="tab"><button class="tabs__button" id="tab-tur" role="button" type="button">Туркменистан</button></li>
+              <li role="tab"><button class="tabs__button tabs__button--active" id="tab-other" role="button" type="button">Другие</button></li>
             </ul>
           </nav>
 
           <div class="tabs__inner">
-            <section class="tabs__item tabs__item--active" role="tab">
+            <section data-id="tab-chn" class="tabs__item tabs__item--chn" role="tabpanel">
               <img src="img/slider-china.png" alt="Китай">
               <div class="tabs__descr">
                 <span class="tabs__title">Китай</span>
@@ -41,65 +41,83 @@
                 </ul>
               </div>
             </section>
-            <section class="tabs__item" role="tab">
-              <span class="tab__heading">Белоруссия</span>
-              <span class="tab__subheading">Экспорт в</span>
-              <span class="tab__subheading">Импорт из</span>
-              <ul class="tab__descr">
-                <li>Доставка</li>
-                <li>Услуги контрактодержателя</li>
-                <li>Расчет стоимости отправки груза</li>
-              </ul>
+            <section data-id="tab-bel" class="tabs__item tabs__item--bel" role="tabpanel">
+              <img src="img/slider-belorussia.png" alt="Белоруссия">
+              <div class="tabs__descr">
+                <span class="tabs__title">Белоруссия</span>
+                <span class="tabs__subheading">Экспорт в</span>
+                <span class="tabs__subheading">Импорт из</span>
+                <ul class="tabs__list">
+                  <li>Доставка</li>
+                  <li>Услуги контрактодержателя</li>
+                  <li>Расчет стоимости отправки груза</li>
+                </ul>
+              </div>
             </section>
-            <section class="tabs__item" role="tab">
-              <span class="tab__heading">Азербайджан</span>
-              <span class="tab__subheading">Экспорт в</span>
-              <span class="tab__subheading">Импорт из</span>
-              <ul class="tab__descr">
-                <li>Доставка</li>
-                <li>Услуги контрактодержателя</li>
-                <li>Расчет стоимости отправки груза</li>
-              </ul>
+            <section data-id="tab-aze" class="tabs__item tabs__item--aze" role="tabpanel">
+              <img src="img/slider-aze.png" alt="Азербайджан">
+              <div class="tabs__descr">
+                <span class="tabs__title">Азербайджан</span>
+                <span class="tabs__subheading">Экспорт в</span>
+                <span class="tabs__subheading">Импорт из</span>
+                <ul class="tabs__list">
+                  <li>Доставка</li>
+                  <li>Услуги контрактодержателя</li>
+                  <li>Расчет стоимости отправки груза</li>
+                </ul>
+              </div>
             </section>
-            <section class="tabs__item" role="tab">
-              <span class="tab__heading">Казахстан</span>
-              <span class="tab__subheading">Экспорт в</span>
-              <span class="tab__subheading">Импорт из</span>
-              <ul class="tab__descr">
-                <li>Доставка</li>
-                <li>Услуги контрактодержателя</li>
-                <li>Расчет стоимости отправки груза</li>
-              </ul>
+            <section data-id="tab-kaz" class="tabs__item tabs__item--kaz" role="tabpanel">
+              <img src="img/slider-kaz.png" alt="Казахстан">
+              <div class="tabs__descr">
+                <span class="tabs__title">Казахстан</span>
+                <span class="tabs__subheading">Экспорт в</span>
+                <span class="tabs__subheading">Импорт из</span>
+                <ul class="tabs__list">
+                  <li>Доставка</li>
+                  <li>Услуги контрактодержателя</li>
+                  <li>Расчет стоимости отправки груза</li>
+                </ul>
+              </div>
             </section>
-            <section class="tabs__item" role="tab">
-              <span class="tab__heading">Киргизия</span>
-              <span class="tab__subheading">Экспорт в</span>
-              <span class="tab__subheading">Импорт из</span>
-              <ul class="tab__descr">
-                <li>Доставка</li>
-                <li>Услуги контрактодержателя</li>
-                <li>Расчет стоимости отправки груза</li>
-              </ul>
+            <section data-id="tab-kir" class="tabs__item tabs__item--kir" role="tabpanel">
+              <img src="img/slider-kir.png" alt="Киргизия">
+              <div class="tabs__descr">
+                <span class="tabs__title">Киргизия</span>
+                <span class="tabs__subheading">Экспорт в</span>
+                <span class="tabs__subheading">Импорт из</span>
+                <ul class="tabs__list">
+                  <li>Доставка</li>
+                  <li>Услуги контрактодержателя</li>
+                  <li>Расчет стоимости отправки груза</li>
+                </ul>
+              </div>
             </section>
-            <section class="tabs__item" role="tab">
-              <span class="tab__heading">Туркменистан</span>
-              <span class="tab__subheading">Экспорт в</span>
-              <span class="tab__subheading">Импорт из</span>
-              <ul class="tab__descr">
-                <li>Доставка</li>
-                <li>Услуги контрактодержателя</li>
-                <li>Расчет стоимости отправки груза</li>
-              </ul>
+            <section data-id="tab-tur" class="tabs__item tabs__item--tur" role="tabpanel">
+              <img src="img/slider-tur.png" alt="Туркменистан">
+              <div class="tabs__descr">
+                <span class="tabs__title">Туркменистан</span>
+                <span class="tabs__subheading">Экспорт в</span>
+                <span class="tabs__subheading">Импорт из</span>
+                <ul class="tabs__list">
+                  <li>Доставка</li>
+                  <li>Услуги контрактодержателя</li>
+                  <li>Расчет стоимости отправки груза</li>
+                </ul>
+              </div>
             </section>
-            <section class="tabs__item" role="tab">
-              <span class="tab__heading">Другие</span>
-              <span class="tab__subheading">Экспорт</span>
-              <span class="tab__subheading">Импорт</span>
-              <ul class="tab__descr">
-                <li>Доставка</li>
-                <li>Услуги контрактодержателя</li>
-                <li>Расчет стоимости отправки груза</li>
-              </ul>
+            <section data-id="tab-other" class="tabs__item tabs__item--all tabs__item--active" role="tabpanel">
+              <img src="img/slider-other.png" alt="Другие">
+              <div class="tabs__descr">
+                <span class="tabs__title">Другие Страны</span>
+                <span class="tabs__subheading">Экспорт</span>
+                <span class="tabs__subheading">Импорт</span>
+                <ul class="tabs__list">
+                  <li>Доставка</li>
+                  <li>Услуги контрактодержателя</li>
+                  <li>Расчет стоимости отправки груза</li>
+                </ul>
+              </div>
             </section>
           </div>
         </div>
