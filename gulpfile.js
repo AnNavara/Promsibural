@@ -59,7 +59,7 @@ lazyRequireTask('js:main', './tasks/js', {
 
 lazyRequireTask('js:lib', './tasks/jsLib', {
   base: './source/_js/lib/*.js',
-  dest: './build/js/lib'
+  dest: './build/js/lib/'
 });
 
 // gulp.task('js', gulp.parallel('js:main', 'js:lib'));

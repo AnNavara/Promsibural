@@ -1,19 +1,19 @@
 .modal {
   position: fixed;
-  z-index: 1010;
   top: 82px;
   left: 50%;
+  z-index: 1010;
   width: 362px;
   max-width: 100%;
   margin: 0 auto;
   color: #fff;
   transform: translateX(-50%);
 
-  &--closed{
+  &--closed {
     display: none;
   }
 
-  &--overlay{
+  &--overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,12 +23,15 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  &--thank {
+  &--thank,
+  &--error {
+    padding: 0 59px 61px;
     text-align: center;
     background-color: $blue-blend--3;
 
     h3 {
       padding-bottom: 17px;
+      margin-top: 32px;
     }
 
     span {
@@ -57,6 +60,11 @@
     background-color: $blue-blend--3;
   }
 
+  &__btn {
+    display: block;
+    width: 100%;
+  }
+
   &__close {
     position: absolute;
     top: 0;
@@ -65,11 +73,6 @@
     height: 34px;
     background-color: #fff;
     border: none;
-
-    &-btn {
-      display: block;
-      width: 100%;
-    }
 
     &::before,
     &::after {
@@ -98,12 +101,21 @@
       background-color: $brand-darken;
     }
   }
+
+  &__form {
+    width: 100%;
+
+    input[type=text],
+    input[type=email] {
+      width: 100%;
+    }
+  }
 }
 
 .estim-deal {
   width: 664px;
-  padding: 0 59px 32px 59px;
   max-width: 100%;
+  padding: 0 59px 32px 59px;
   background-color: $blue--joke;
 
   &__wrapper {

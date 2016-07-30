@@ -1,6 +1,24 @@
 .callback {
   font-weight: 300;
 
+  &--fail {
+    .callback-form {
+      display: none;
+    }
+    .callback__failed {
+      display: block;
+    }
+  }
+
+  &--fine{
+    .callback-form{
+      display: none;
+    }
+    .callback__succeed{
+      display: block;
+    }
+  }
+
   &__descr {
     display: block;
     font-size: $font-size--base;
@@ -17,6 +35,30 @@
       display: inline-block;
       color: #fff;
       letter-spacing: 0.02em;
+    }
+  }
+
+  &__succeed,
+  &__failed {
+    display: none;
+    width: 100%;
+    padding: 38px 58px 57px 58px;
+    margin-top: 50px;
+    color: #fff;
+    background-color: $blue-blend;
+
+    h3 {
+      margin: 0 0 0.8em 0;
+      color: #fff;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    button{
+      width: 100%;
     }
   }
 
@@ -39,7 +81,7 @@
       border: none;
       border-bottom: 1px solid $brand-yellow;
 
-      &:focus{
+      &:focus {
         outline: none;
       }
 

@@ -43,11 +43,28 @@
           <span class="callback__descr">Звоните с 9:00 до 18:00 по будням</span>
         </div>
         <span class="callback__descr">Или оставьте свои контакты, мы свяжемся с вами:</span>
-        <form class="callback-form" action="" method="post">
-          <input class="callback-form__text" type="text" name="" id="" placeholder="Ваше имя">
-          <input class="callback-form__text callback-form__text--mar" type="text" name="" id="" placeholder="Номер телефона">
-          <input class="btn" type="submit" value="Перезвоните мне">
-        </form>
+        <div class="callback__gutter">
+          <form class="callback-form _js-form" action="/send?" method="post">
+            <input class="callback-form__text" type="text" name="name" placeholder="Ваше имя">
+            <input class="callback-form__text callback-form__text--mar" type="text" name="phone" placeholder="Номер телефона" pattern="^((8|\+7)[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?[\d-.\s]{7,10}$">
+            <input class="btn" type="submit" value="Перезвоните мне">
+          </form>
+
+          <div class="callback__succeed">
+            <h3>Спасибо!</h3>
+            <span>Мы свяжемся с вами<br> в ближайшее время!</span>
+            <button class="btn _js-small-form-btn" type="button" name="button">
+              Закрыть
+            </button>
+          </div>
+          <div class="callback__failed">
+            <h3>Ошибка</h3>
+            <span></span>
+            <button class="btn _js-small-form-btn" type="button" name="button">
+              Закрыть
+            </button>
+          </div>
+        </div>
       </aside>
 
     </div>

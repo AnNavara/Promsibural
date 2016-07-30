@@ -84,6 +84,11 @@ form {
     font-size: $font-size--menu;
     color: $brand-primary;
   }
+
+  input[type=text]:not([value=""]):invalid {
+    background-color: red;
+    border: red;
+  }
 }
 
 label {
