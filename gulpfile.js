@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const clean = require('gulp-clean');
 const portVal = 8082;
 
 function lazyRequireTask(taskName, path, options) {
@@ -91,10 +92,24 @@ gulp.task('watch', function() {
 
 gulp.task('build', gulp.series('html', 'js:lib', 'js:main', 'styles', 'assets:img', 'watch'));
 
-// gulp.task('production', 'prod',
-//   gulp.series(
-//     'clean',
-//     gulp.parallel('html', 'assets:svg', 'assets:img'),
-//     gulp.series('styles', 'min:css', 'critical')
-//   )
-// );
+gulp.task('clean', function(cb) {
+  gulp.src('build/css/*.css', {read: false})
+    .pipe(clean());
+  gulp.src('build/js/*.js', {read: false})
+    .pipe(clean());
+  gulp.src('build/img/*', {read: false})
+    .pipe(clean());
+  gulp.src('build/*.html', {read: false})
+    .pipe(clean());
+  cb();
+});
+
+gulp.task('prod',
+  gulp.series(
+    'clean',
+    'html',
+    'assets:img',
+    'styles',
+    'min:css'
+  )
+);

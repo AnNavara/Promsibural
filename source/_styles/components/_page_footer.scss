@@ -46,7 +46,8 @@ footer {
     line-height: 1.4;
     color: inherit;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $gray-76;
     }
   }
@@ -83,7 +84,8 @@ footer {
       padding-left: 0;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $gray-76;
     }
   }

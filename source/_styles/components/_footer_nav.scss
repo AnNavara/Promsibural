@@ -48,8 +48,18 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
 
+    &:hover,
+    &:focus {
+      color: $gray-76;
+    }
+
     &--accent {
       color: $brand-color;
+
+      &:hover,
+      &:focus {
+        color: $brand-color--active;
+      }
     }
   }
 }

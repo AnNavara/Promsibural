@@ -7,28 +7,29 @@
   }
 
   h1 {
+    margin-bottom: 39px;
     font-size: 36px;
     font-weight: 300;
     line-height: 1;
-    margin-bottom: 39px;
     color: $brand-accent;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
 
   &__wrapper {
-    @include clearfix;
     margin-top: -42px;
 
-    &:first-of-type{
+    @include clearfix;
+
+    &:first-of-type {
       margin-top: 0;
 
       .flowchart__step {
         margin-top: 0;
 
-        &::before{
-          height: 50%;
+        &::before {
           top: 50%;
+          height: 50%;
         }
       }
     }
@@ -36,7 +37,7 @@
     &:nth-child(odd) {
       .flowchart__step {
         float: right;
-        &::before{
+        &::before {
           left: -14%;
 
           @media (min-width: $screen-md-min) {
@@ -47,7 +48,7 @@
             left: -54px;
           }
         }
-        &::after{
+        &::after {
           left: -12.6%;
 
           @media (min-width: $screen-lg-min) {
@@ -60,14 +61,14 @@
 
   &__step {
     position: relative;
-    width: 44.2%; //382px
     float: left;
+    width: 44.2%; //382px
 
     @media (min-width: $screen-lg-min) {
       width: 382px;
     }
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       top: 0;
@@ -85,7 +86,7 @@
       }
     }
 
-    &::after{
+    &::after {
       position: absolute;
       content: "";
       top: 50%;
@@ -100,70 +101,71 @@
     }
 
     span {
+      margin-right: -2px;
       font-size: 28px;
       font-weight: 700;
       line-height: 1;
-      margin-right: -2px;
       color: $brand-accent;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
+
     p {
       display: block;
-      margin-top: -2px;
       padding: 26px 60px 21px 44px;
+      margin-top: -4px;
       background-color: $brand-color;
     }
   }
 
-  &__end{
+  &__end {
     position: relative;
     padding-left: 60%;
 
-    span{
+    span {
       position: relative;
-      display: block;
       top: -9px;
+      display: block;
       font-size: 16px;
       line-height: $line-height-base;
       color: $brand-primary;
     }
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
-      left: calc(50% - 32px);
       top: 0;
+      left: calc(50% - 32px);
       width: 64px;
       height: 64px;
-      border-radius: 50%;
-      border: 6px solid $brand-accent;
       background: url("../img/icon-checker.png") no-repeat center;
+      border: 6px solid $brand-accent;
+      border-radius: 50%;
     }
   }
-  &__phone{
+  &__phone {
     font-size: $font-size-h2--mod;
     color: $brand-primary;
     letter-spacing: 0.02em;
   }
 }
 
-.export-page{
+.export-page {
   padding-bottom: 140px;
 
-  &__descr{
+  &__descr {
     position: relative;
     margin-bottom: 55px;
 
-    &::after{
+    &::after {
       position: absolute;
       content: "";
-      right: -39%;
       top: 10px;
+      right: -39%;
       width: 190px;
       height: 190px;
-      border-radius: 50%;
       background: url("../img/icon-arrow-up--big.png") no-repeat center #fff;
+      border-radius: 50%;
     }
   }
 }
