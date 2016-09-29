@@ -4,11 +4,11 @@
 
     &::after {
       position: absolute;
+      content: "";
       top: 10px;
       right: -39%;
       width: 190px;
       height: 190px;
-      content: "";
       background: url("../img/icon-world--big.png") no-repeat center center #fff;
       border-radius: 50%;
     }
@@ -21,14 +21,23 @@
     text-align: center;
   }
 
+  &__inner {
+    height: 400px;
+    margin-bottom: 51px;
+
+    @media (min-width: $screen-lg-min) {
+      height: auto;
+    }
+  }
+
   &__item {
     position: relative;
     display: inline-block;
     width: calc(25.8% - 3px);
+    height: 100%;
     min-height: 300px;
     padding: 102px 33px 25px 40px;
     margin-right: 3px;
-    margin-bottom: 51px;
     margin-left: -0.22em;
     vertical-align: top;
     background-color: #fff;
@@ -50,11 +59,11 @@
 
     &::before {
       position: absolute;
+      content: "";
       top: 36px;
       left: 40px;
       width: 40px;
       height: 40px;
-      content: "";
       background-image: url("../img/icon-checked.png");
       background-repeat: no-repeat;
       background-position: 0 0;
