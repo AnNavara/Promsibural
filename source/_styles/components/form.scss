@@ -78,11 +78,19 @@ form {
   }
 
   input[type="submit"] {
-    // width: 100%;
     padding-top: 12px;
     padding-bottom: 9px;
-    font-size: $font-size--menu;
+    font-size: 11px;
     color: $brand-primary;
+
+
+    @media (min-width: $screen-md-min) {
+    font-size: 12px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+    font-size: $font-size--menu;
+    }
   }
 
   input:not([value=""]):not(:focus):invalid + .form__error-message {

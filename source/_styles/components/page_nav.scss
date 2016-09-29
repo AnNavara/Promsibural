@@ -8,7 +8,7 @@
   li {
     display: inline-block;
     margin-bottom: 0;
-    margin-left: -0.32em;
+    margin-left: -0.34em;
     line-height: 1.2;
 
     &::before {
@@ -60,10 +60,19 @@
   }
 
   li:last-child {
+    margin-left: -5px;
     .page-nav__item {
-      padding: 16px 32px;
+      padding: 16px 2.2em;
       color: $brand-primary;
       background-color: $brand-color;
+
+      @media (min-width: $screen-md-min) {
+        padding: 16px 1.26em;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding: 16px 32px;
+      }
 
       &:hover,
       &:focus {

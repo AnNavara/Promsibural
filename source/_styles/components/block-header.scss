@@ -28,15 +28,19 @@
     display: inline-block;
     min-width: 50%;
     max-width: 100%;
-    margin-left: -4px;
-    text-align: right;
-    color: $brand-color;
-    vertical-align: baseline;
-    text-transform: uppercase;
+    margin-left: -15px;
     font-weight: 300;
+    color: $brand-color;
+    text-align: right;
+    text-transform: uppercase;
+    vertical-align: baseline;
+
+    @media (min-width: $screen-lg-min) {
+      margin-left: -4px;
+    }
 
     &:hover,
-    &:focus{
+    &:focus {
       color: $brand-color--active;
     }
   }

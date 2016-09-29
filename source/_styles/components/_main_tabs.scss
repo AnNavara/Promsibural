@@ -14,7 +14,7 @@
 
   &__menu {
     float: left;
-    width: 201px;
+    width: 170px;
     margin-top: 4px;
 
     ul {
@@ -46,8 +46,8 @@
     transition: background-color 0.1s ease-out;
 
     &:hover {
-      outline: none;
       background-color: $gray-93;
+      outline: none;
     }
 
     &:focus {
@@ -66,18 +66,18 @@
   &__inner {
     position: relative;
     height: 355px;
-    padding-left: 137px;
+    // padding-left: 137px;
     overflow: hidden;  // hint to make it take whole available width
   }
 
   &__item {
     position: absolute;
     top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
+    left: 80px;
+    width: calc(100% - 80px);
     height: 100%;
     border: 20px solid $gray-96;
+    opacity: 0;
     transition: opacity 0.3s ease-out;
 
     @media (min-width: $screen-lg-min) {
@@ -86,9 +86,14 @@
     }
 
     img {
+      display: none;
       position: absolute;
       top: 49px;
       left: -105px;
+
+      @media (min-width: $screen-lg-min) {
+        display: block;
+      }
     }
 
     &--active {
@@ -141,7 +146,11 @@
   &__descr {
     position: absolute;
     top: 40px;
-    left: 245px;
+    left: 70px;
+
+    @media (min-width: $screen-lg-min) {
+      left: 245px;
+    }
   }
 
   &__title {
