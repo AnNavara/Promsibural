@@ -2,7 +2,6 @@
   margin-bottom: 109px;
   color: #fff;
 
-
   &__title {
     display: block;
     margin-bottom: 38px;
@@ -17,6 +16,15 @@
     font-weight: 300;
     text-align: right;
     text-transform: uppercase;
+  }
+
+  &__item {
+    color: #fff;
+    transition: color 0.1s linear;
+
+    &:hover{
+      color: $blue-brand--blend;
+    }
   }
 
   p {
