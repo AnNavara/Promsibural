@@ -4,6 +4,10 @@
   var tab = document.querySelector('.tab');
   var activeTab = 'tab-other';
 
+  if (tab === null) {
+    return;
+  }
+
   var tabsList = tab.querySelectorAll('.tabs__button');
   for (var i = 0; i < tabsList.length; i++) {
     tabsList[i].onclick = function(evt) {
