@@ -8,6 +8,7 @@
   var modalAsk = document.querySelector('.modal--ask-call');
   var modalEstim = document.querySelector('.estim-deal');
   var closeBtn = document.querySelectorAll('._js-modal-close');
+  var closeBtnInner = document.querySelectorAll('._js-modal-close-inner');
 
   function openModal(element) {
     modalOverlay.classList.remove('modal--closed');
@@ -37,9 +38,17 @@
     closeBtn[k].onclick = function(evt) {
       evt.preventDefault();
       var clickedElement = evt.target;
+      console.log(clickedElement.parentNode);
       closeModal(clickedElement);
     };
   }
 
+  for (var p = 0; p < closeBtnInner.length; p++) {
+    closeBtnInner[p].onclick = function(evt) {
+      evt.preventDefault();
+      var clickedElement = evt.target;
+      closeModal(clickedElement.parentNode);
+    };
+  }
 
 })();

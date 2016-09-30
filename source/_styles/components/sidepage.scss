@@ -5,6 +5,8 @@
   color: $brand-primary;
   background-color: $brand-blend;
 
+  flex-grow: 1;
+
   &__title {
     width: 112.9%;
     padding-top: 82px;
@@ -47,3 +49,4 @@
     }
   }
 }
+  

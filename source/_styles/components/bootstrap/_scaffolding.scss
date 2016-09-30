@@ -32,6 +32,11 @@ html {
 body {
   font-family: $font-family-base;
   background-color: $body-bg;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 // Reset fonts for relevant elements

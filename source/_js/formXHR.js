@@ -31,15 +31,15 @@
       var data = new FormData(form);
 
       request(data, function(status, responseText) {
-        if (form.parentNode.classList.contains('modal')) {
-          form.parentNode.classList.add('modal--closed');
+        if (form.parentNode.parentNode.classList.contains('modal')) {
+          form.parentNode.parentNode.classList.add('modal--closed');
           if (status === 200) {
             console.log(document.querySelector('.modal--thank'));
             document.querySelector('.modal--thank').classList.remove('modal--closed');
           } else {
             document.querySelector('.modal--error').classList.remove('modal--closed');
-            document.querySelector('.modal--error h3').innerHTML = 'Ошибка' + '  ' + status;
-            document.querySelector('.modal--error span').innerHTML = responseText;
+            document.querySelector('.modal--error .modal__guts h3').innerHTML = 'Ошибка' + '  ' + status;
+            document.querySelector('.modal--error .modal__guts span').innerHTML = responseText;
           }
         } else {
           if (status === 200) {

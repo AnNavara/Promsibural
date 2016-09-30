@@ -2,9 +2,14 @@
   position: relative;
   min-height: 304px;
   padding: 28px 13% 30px 13%;
+  margin-top: -53px;
   margin-bottom: 82px;
   color: $brand-primary;
   background-color: #fff;
+
+  &--alt{
+    margin-top: 0;
+  }
 
   @media (min-width: $screen-lg-min) {
     padding: 39px 32px 30px 37px;
